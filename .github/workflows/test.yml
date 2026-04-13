@@ -1,0 +1,12 @@
+name: test deployement
+
+permissions:
+  contents: read
+
+on:
+  push:
+    branch: [main]
+
+jobs:
+  test:
+    runs-on: ubuntu-24.4
