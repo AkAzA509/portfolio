@@ -94,11 +94,14 @@ h2 {
 
 .resume-image-link {
   display: block;
+  width: 100%;
   border-radius: 12px;
 }
 
 .resume-preview {
   width: 100%;
+  height: auto;
+  max-width: 100%;
   display: block;
   border: 1px solid var(--line);
   border-radius: 12px;
@@ -153,9 +156,19 @@ h2 {
 }
 
 @media (max-width: 700px) {
+  body {
+    padding: 0.55rem;
+  }
+
   .section-head {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .resume-preview {
+    max-height: 70vh;
+    object-fit: contain;
+    object-position: top;
   }
 
   .resume-actions {
