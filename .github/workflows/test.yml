@@ -1,12 +1,18 @@
-name: test deployement
+name: test deployment
 
 permissions:
   contents: read
 
 on:
   push:
-    branch: [main]
+    branches: [testing]
 
 jobs:
   test:
-    runs-on: ubuntu-24.4
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
+
+      - name: Build and run C program
+        uses: ./.github/actions/compile

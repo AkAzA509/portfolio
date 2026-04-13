@@ -1,0 +1,12 @@
+name: Build and test C
+description: Compile and run the C program
+runs:
+  using: composite
+  steps:
+    - name: Compile
+      run: gcc -Wall -Wextra -O2 *.c -o test
+      shell: bash
+
+    - name: Run
+      run: ./test
+      shell: bash
