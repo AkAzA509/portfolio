@@ -4,10 +4,56 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg" href="./favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Portfolio</title>
+  <meta
+    name="description"
+    content="Online resume"
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="./style.css" />
+  <title>Gavin Girault</title>
   </head>
   <body>
-	<h1>Test</h1>
-	<h4>bonjour</h4>
+  <header class="hero">
+    <h1>Gavin Girault
+      <span class="name-meta"> Software Engineering Student</span>
+    </h1>
+    <p>I am looking for a 4 to 6 month internship (ideally 6 months) in Software Development or Backend Engineering in Nice and nearby areas.</p>
+  </header>
+
+  <main>
+    <section id="resume" class="panel">
+    <div class="section-head">
+      <h2>Resume</h2>
+      <span class="tag">Updated: April 2026</span>
+    </div>
+
+    <div class="resume-wrap">
+      <iframe
+      class="resume-viewer"
+      src="./public/resume.pdf#view=FitH"
+      title="Resume PDF"
+      loading="lazy"
+      ></iframe>
+
+      <div class="resume-actions">
+      <a class="btn btn-secondary" href="./public/resume.pdf" download>Download PDF</a>
+      </div>
+    </div>
+    </section>
+  </main>
+
+  <footer id="contact" class="footer">
+    <p>Contact</p>
+    <div class="footer-links">
+    <a href="https://github.com/AkAzA509" target="_blank" rel="noreferrer">Github</a>
+    <a href="https://www.linkedin.com/in/gavin-girault" target="_blank" rel="noreferrer">LinkedIn</a>
+    </div>
+  </footer>
   </body>
 </html>
+
